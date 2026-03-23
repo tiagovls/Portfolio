@@ -200,7 +200,7 @@ export default function Global3DCard() {
       {/* Back Face */}
       <div style={{ position: 'absolute', inset: 0, backfaceVisibility: 'hidden', transform: 'rotateY(180deg)', background: '#000', borderRadius: 'var(--radius)', overflow: 'hidden', border: '1px solid #222' }}>
         <video 
-          src="/img/backcardvid.mp4" 
+          src="/Portfolio/img/backcardvid.mp4" 
           autoPlay 
           loop 
           muted 

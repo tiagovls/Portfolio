@@ -18,7 +18,7 @@ export default function WorkExperience() {
 
   const handlePrintCV = (e: React.MouseEvent) => {
     e.preventDefault();
-    window.open('/pdf/cv.pdf', '_blank');
+    window.open('/Portfolio/pdf/cv.pdf', '_blank');
   };
 
   useEffect(() => {
