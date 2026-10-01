@@ -1,0 +1,8 @@
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Large raw presentation source (only the extracted slide image commando_slide1.png is used on the site)
+img/Présentation PowerPoint - 202607 CHALLENGE INNOVATION COS.pdf
+img/*CHALLENGE*INNOVATION*.pdf

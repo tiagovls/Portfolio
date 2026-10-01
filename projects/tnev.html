@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TNEV — Arduino Target-Tracking Robot | Tiago Vilas</title>
+  <meta name="description" content="TNEV: Arduino-powered mechatronics robot capable of line-following and cork-launching at a moving target — by Tiago Vilas at UTT."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <link rel="icon" type="image/svg+xml" href="../img/favicon.svg"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon.png"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="stylesheet" href="../css/project.css"/>
+</head>
+<body>
+  <nav id="navbar" class="scrolled">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo"><span class="logo-tv">TV</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html#about" class="nav-link">About</a></li>
+        <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
+        <li><a href="../index.html#projects" class="nav-link">Projects</a></li>
+        <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+        <li><a href="../img/Tiago CV EN.pdf" download class="nav-cta">Download CV</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mob-menu" id="mob-menu">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#contact">Contact</a>
+      <a href="../img/Tiago CV EN.pdf" download class="mob-cta">Download CV</a>
+    </div>
+  </nav>
+
+  <section class="project-hero" style="background:linear-gradient(135deg,#0d0d1a 0%,#1B3A6B 60%,#1a3a5e 100%);">
+    <div class="project-hero-bg"></div>
+    <div class="project-hero-gradient"></div>
+    <div class="container project-hero-content">
+      <a href="../index.html#projects" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+        All Projects
+      </a>
+      <div class="project-hero-tags">
+        <span class="project-hero-tag">Mechatronics</span>
+        <span class="project-hero-tag">Arduino (C++)</span>
+        <span class="project-hero-tag">3D Printing</span>
+        <span class="project-hero-tag">UTT &mdash; TNEV</span>
+      </div>
+      <h1 class="project-hero-title">TNEV &mdash;<br/>Target-Tracking Robot</h1>
+      <p class="project-hero-subtitle">An Arduino-powered mechatronics robot that follows a line autonomously and launches a cork precisely into a moving bin from 3 meters.</p>
+      <div class="project-meta-bar">
+        <div class="project-meta-item"><span class="project-meta-label">Course</span><span class="project-meta-value">TNEV &mdash; Mechatronics</span></div>
+        <div class="project-meta-item"><span class="project-meta-label">Institution</span><span class="project-meta-value">UTT &mdash; Troyes, France</span></div>
+        <div class="project-meta-item"><span class="project-meta-label">Period</span><span class="project-meta-value">2024 &ndash; 2025</span></div>
+        <div class="project-meta-item"><span class="project-meta-label">Type</span><span class="project-meta-value">Academic &mdash; Team Project</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="project-body">
+    <div class="container">
+      <div class="project-layout">
+        <main class="project-main">
+
+          <!-- Demo video -->
+          <div class="reveal" style="border-radius:var(--radius-md);overflow:hidden;margin-bottom:32px;background:#0d0d1a;">
+            <video autoplay muted loop playsinline style="width:100%;display:block;border-radius:var(--radius-md);max-height:460px;object-fit:cover;">
+              <source src="../img/parcoursRobotTNEV.MOV" type="video/mp4">
+            </video>
+            <p style="text-align:center;font-size:.75rem;color:var(--text-light);padding:8px 0 4px;font-style:italic;">Robot line-following demo &mdash; parcours autonome</p>
+          </div>
+
+          <div class="reveal">
+            <h2 class="project-section-title">Overview</h2>
+            <div class="project-text">
+              <p>The <strong>TNEV</strong> course at UTT is a full mechatronics project course: from design to prototyping to embedded programming. Our team designed and built a robot capable of <strong>following a line on the ground autonomously</strong> and, at the right moment, <strong>launching a cork into a moving bin</strong> from a distance of 3 meters.</p>
+              <p>The project covered the complete engineering cycle: mechanical design, 3D printing, electronic wiring, and embedded programming in C++ on an Arduino platform.</p>
+            </div>
+          </div>
+
+          <!-- Demo Tir video -->
+          <div class="reveal" style="border-radius:var(--radius-md);overflow:hidden;margin:24px 0;background:#0d0d1a;">
+            <video autoplay muted loop playsinline style="width:100%;display:block;border-radius:var(--radius-md);max-height:460px;object-fit:cover;">
+              <source src="../img/demoTirVidTNEV.MOV" type="video/mp4">
+            </video>
+            <p style="text-align:center;font-size:.75rem;color:var(--text-light);padding:8px 0 4px;font-style:italic;">Cork-launching demo &mdash; tir sur cible mobile</p>
+          </div>
+
+          <div class="reveal">
+            <h2 class="project-section-title">Technical Breakdown</h2>
+            <div class="project-text">
+              <p><strong>Mechanical structure</strong> &mdash; Designed in CAD and printed in FDM 3D printing. The chassis integrates motor mounts, sensor holders, and the cork launcher mechanism.</p>
+              <p><strong>Embedded code (C++)</strong> &mdash; Written entirely in Arduino C++. PID control loop for smooth and precise line-following. Targeting algorithm computes timing and angle for the cork-launching actuator based on sensor input.</p>
+              <p><strong>Electronics</strong> &mdash; IR sensors for line detection, servo motors for the launcher, DC motors for drive. Power management and wiring handled entirely by the team.</p>
+              <p><strong>Project management</strong> &mdash; Full team coordination: task allocation, timeline, budget control, and final demonstration under competition conditions.</p>
+            </div>
+          </div>
+
+          <div class="project-nav reveal">
+            <a href="commando.html" class="proj-nav-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+              Prev: Concours Innovation COS
+            </a>
+            <a href="catia-lamp.html" class="proj-nav-link proj-nav-link--next">
+              Next: CATIA Pixar Lamp
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+          </div>
+        </main>
+
+        <aside class="project-sidebar">
+          <div class="sidebar-card">
+            <p class="sidebar-card-title">Status</p>
+            <span class="status-badge status-badge--done"><span class="status-dot"></span>Completed &mdash; 2025</span>
+          </div>
+          <div class="sidebar-card">
+            <p class="sidebar-card-title">Technologies</p>
+            <ul class="sidebar-list">
+              <li>Arduino (C++)</li>
+              <li>PID Control</li>
+              <li>3D Printing (FDM)</li>
+              <li>IR Sensors</li>
+              <li>Servo &amp; DC Motors</li>
+              <li>CAD Design</li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <p class="sidebar-card-title">Disciplines</p>
+            <ul class="sidebar-list">
+              <li>Mechatronics</li>
+              <li>Embedded Systems</li>
+              <li>Robotics</li>
+              <li>Mechanical Design</li>
+              <li>Team Management</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div class="container footer-inner">
+      <a href="../index.html" class="footer-logo">TV</a>
+      <p class="footer-copy">&copy; 2026 Tiago Vilas</p>
+      <div class="footer-links">
+        <a href="mailto:tvilas05@gmail.com" class="footer-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+        <a href="https://www.linkedin.com/in/tiago-vilas/" target="_blank" rel="noopener" class="footer-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
